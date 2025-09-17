@@ -1,0 +1,13 @@
+[project]
+name = "section-2-get-started-with-hello-world-chain"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "langchain>=0.3.27",
+    "langchain-anthropic>=0.3.20",
+    "python-dotenv>=1.1.1",
+]
