@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 
 from langchain_anthropic import ChatAnthropic
+from langchain_ollama import ChatOllama
 from langchain_core.prompts import PromptTemplate
 
 load_dotenv()
@@ -30,6 +31,7 @@ def main():
     )
 
     llm = ChatAnthropic(temperature=0, model="claude-opus-4-1-20250805")
+    # llm = ChatOllama(temperature=0, model="gemma3:270m")
 
     chain = summary_prompt_template | llm
 
