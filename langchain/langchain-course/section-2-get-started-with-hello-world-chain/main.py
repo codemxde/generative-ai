@@ -21,6 +21,7 @@ def main():
     """
 
     # We want the above 'information' to propagate to the LLM, so we will use this
+    # test comment
     summary_template = """
     Give the information {information} about a person I want you to create:
     1. A short summary
